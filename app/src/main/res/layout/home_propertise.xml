@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_margin="10dp"
+    android:id="@+id/ll_propertyDetail"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/backgroundborderpropertice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/orange_buttons_curved"
+
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_Propertyimage"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+
+            android:background="@drawable/backgroundborderpropertice"
+            android:scaleType="fitXY"
+            android:src="@drawable/sarthak"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_property_offer"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_rupee"
+                android:text="13,100"
+                android:textSize="14dp"></TextView>
+            <TextView
+                android:id="@+id/tv_propertytype"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 BHK Flat"
+                android:textSize="12dp"></TextView>
+
+            <TextView
+                android:id="@+id/Tv_Addressid"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:maxLines="2"
+                android:layout_height="wrap_content"
+                android:text="DB Ozone\nMira Road,Mumbai"
+                android:textSize="12dp"></TextView>
+
+
+            <TextView
+                android:id="@+id/tv_property_time"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Immediately"
+                android:textSize="12dp"></TextView>
+        </LinearLayout>
+       <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGrey"></View>-->
+        <!--<LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_urgentcallid"
+               android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:layout_height="wrap_content"
+                android:text="Call Agent"></TextView>
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

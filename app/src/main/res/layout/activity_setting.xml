@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+
+   >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#FD0505"
+        android:id="@+id/toolbar"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification(3)"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                ></TextView>
+
+            <ToggleButton
+                android:layout_width="50dp"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textOff=""
+                android:id="@+id/toggle"
+                android:layout_centerVertical="true"
+                android:textOn=""
+                android:background="@drawable/switcht"
+                ></ToggleButton>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:id="@+id/recqui"
+            android:textColor="#000"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:text="Requirements Notification"></TextView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:id="@+id/rel2"
+            android:layout_below="@+id/recqui"
+            android:background="@drawable/boxback">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rel8"
+                android:background="@drawable/boxback"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For Matched Properties"
+                    android:layout_centerVertical="true"
+                    android:textStyle="normal"
+                    android:id="@+id/txtMatchedProperties"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15sp"></TextView>
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:layout_marginRight="15sp"
+                    android:id="@+id/toggleMatchedP"
+                    android:layout_centerVertical="true"
+                    android:textOn=""
+                    android:background="@drawable/switcht"
+                    ></ToggleButton>
+
+            </RelativeLayout>
+
+            <View android:id="@+id/separator"
+                android:background="#31000000"
+                android:layout_width = "fill_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/rel8"
+                android:layout_marginTop="0dp"
+                android:layout_marginHorizontal="13dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/separator"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For Matched Project"
+                    android:layout_centerVertical="true"
+                    android:textStyle="normal"
+                    android:id="@+id/txtMatchedProject"
+                    android:textSize="15sp"
+
+                    android:textColor="#000"
+                    android:layout_marginLeft="15sp"></TextView>
+
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:layout_marginRight="15sp"
+                    android:id="@+id/toggleMatchedPro"
+                    android:layout_centerVertical="true"
+                    android:textOn=""
+                    android:background="@drawable/switcht"
+                    ></ToggleButton>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:layout_below="@+id/rel2"
+            android:id="@+id/newsnot"
+            android:textColor="#000"
+
+            android:layout_marginLeft="15dp"
+            android:text="Properties News Notification"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:id="@+id/rel3"
+            android:layout_below="@+id/newsnot"
+            android:background="@drawable/boxback">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For Matched Properties"
+                android:layout_centerVertical="true"
+                android:textStyle="normal"
+                android:id="@+id/txtLatestProperties"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_marginLeft="15sp"></TextView>
+
+            <ToggleButton
+                android:layout_width="50dp"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textOff=""
+                android:layout_marginRight="15sp"
+                android:id="@+id/toggleNewsNot"
+                android:layout_centerVertical="true"
+                android:textOn=""
+                android:background="@drawable/switcht"
+                ></ToggleButton>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:layout_below="@+id/rel3"
+            android:id="@+id/frenot"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:text="Properties News Notification"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:layout_margin="15dp"
+            android:id="@+id/rel4"
+            android:layout_below="@+id/frenot"
+            android:background="@drawable/boxback">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rel5"
+                android:background="@drawable/boxback"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily"
+                   android:layout_centerVertical="true"
+                    android:textStyle="normal"
+                    android:id="@+id/txtDaily"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15sp"></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_check_circle_black_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_daily"
+                    android:layout_marginRight="15sp"
+                    android:layout_alignParentEnd="true"></ImageView>
+
+            </RelativeLayout>
+            <View android:id="@+id/separator3"
+                android:background="#31000000"
+                android:layout_width = "fill_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/rel5"
+                android:layout_marginHorizontal="13dp"/>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_below="@+id/separator3"
+              android:id="@+id/rel6"
+              android:background="@drawable/boxback"
+              android:layout_height="50dp">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Alternate Day"
+                 android:layout_centerVertical="true"
+                  android:textStyle="normal"
+                  android:id="@+id/txtAlterNet"
+                  android:textSize="15sp"
+                  android:textColor="#000"
+                  android:layout_marginLeft="15sp"></TextView>
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_radio_button_unchecked_black_24dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="15sp"
+                  android:id="@+id/img_alternet"
+                  android:layout_alignParentEnd="true"></ImageView>
+
+          </RelativeLayout>
+            <View android:id="@+id/separator4"
+                android:background="#31000000"
+                android:layout_width = "fill_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/rel6"
+                android:layout_marginHorizontal="13dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:id="@+id/rel7"
+                android:background="@drawable/boxback"
+                android:layout_below="@+id/separator4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly"
+                  android:layout_centerVertical="true"
+
+                    android:textStyle="normal"
+                    android:id="@+id/txtWeekly"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15sp"></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_radio_button_unchecked_black_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_weekly"
+                    android:layout_marginRight="15sp"
+                    android:layout_alignParentEnd="true"></ImageView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

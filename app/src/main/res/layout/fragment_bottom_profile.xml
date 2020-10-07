@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navigation_Profile"
+    android:background="@color/color_gray_light"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/card1"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome Raja!"
+                    android:textSize="20dp"
+                    android:id="@+id/welcome"
+                    android:textColor="#000"
+                    android:layout_marginTop="40sp"
+                    android:layout_marginLeft="30sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="admin@gmail.com"
+                    android:textSize="14dp"
+                    android:id="@+id/email"
+                    android:layout_below="@+id/welcome"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginLeft="30sp"
+                    android:textStyle="normal"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7889595642"
+                    android:id="@+id/mobile"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/email"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="30sp"
+                    android:textStyle="normal"></TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/card1"
+            android:id="@+id/card2"
+            android:layout_height="80dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:src="@drawable/town"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Requirements"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/my_recquirments"
+                    android:textSize="18dp"
+                   android:layout_marginTop="17dp"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View and edit your requirements with us"
+                    android:layout_marginTop="3dp"
+                    android:textSize="13dp"
+                    android:layout_below="@+id/my_recquirments"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+ <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:layout_centerVertical="true"
+     android:id="@+id/clk_my_recquirments"
+    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"></ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/card2"
+            android:id="@+id/card3"
+            android:layout_height="80dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:src="@drawable/ic_phones"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contacted Properties"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/contacted_properties"
+                    android:textSize="18dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See properties you contacted recently"
+                    android:layout_marginTop="3dp"
+                    android:textSize="13dp"
+                    android:layout_below="@+id/contacted_properties"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"></ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/card3"
+            android:id="@+id/card4"
+            android:layout_height="80dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:src="@drawable/hearts"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shortlisted Properties"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/shortlisted_properties"
+                    android:textSize="18dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See properties you shortlisted recently"
+                    android:layout_marginTop="3dp"
+                    android:textSize="13dp"
+                    android:layout_below="@+id/shortlisted_properties"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+                <ImageView
+                    android:id="@+id/img_shortlishtedid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"></ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/card4"
+            android:id="@+id/card5"
+            android:layout_height="80dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:src="@drawable/eye"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last view Properties"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/last_view_properties"
+                    android:textSize="18dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="recently viewed properties"
+                    android:layout_marginTop="3dp"
+                    android:textSize="13dp"
+                    android:layout_below="@+id/last_view_properties"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"></ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/card5"
+            android:id="@+id/card6"
+            android:layout_height="80dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:src="@drawable/bookmark"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bookmark"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/saved_search"
+                    android:textSize="18dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See saved searches"
+                    android:layout_marginTop="3dp"
+                    android:textSize="13dp"
+                    android:layout_below="@+id/saved_search"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"></ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/card6"
+            android:id="@+id/card7"
+            android:layout_height="80dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:src="@drawable/film"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scheduled Tours"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/schedule_tour"
+                    android:textSize="18dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Access your Scheduled video Tours here"
+                    android:layout_marginTop="3dp"
+                    android:textSize="13dp"
+                    android:layout_below="@+id/schedule_tour"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"></ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/card7"
+            android:layout_marginBottom="70dp"
+            android:id="@+id/card8"
+            android:layout_height="80dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="30sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:src="@drawable/login"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login/Signup"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/loginsignup"
+                    android:textSize="18dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="70dp"
+                    ></TextView>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"></ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

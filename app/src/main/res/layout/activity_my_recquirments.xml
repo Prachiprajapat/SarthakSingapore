@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="#FFF"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:id="@+id/my_rec"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:text="My Requirement"></TextView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/my_rec"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="14dp"
+                android:id="@+id/recq"
+                android:layout_margin="7dp"
+                android:layout_height="230dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="@drawable/gradientbg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Which stage are you at"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15sp"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:id="@+id/stage"
+                        android:layout_marginLeft="15sp"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Finalized the location"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="8sp"
+                        android:textSize="20sp"
+                        android:layout_below="@+id/stage"
+                        android:textStyle="normal"
+                        android:id="@+id/finilize"
+                        android:layout_marginLeft="15sp"></TextView>
+
+
+                    <View android:id="@+id/separator"
+                        android:background="#ffffff"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/finilize"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginHorizontal="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You are looking for"
+                        android:textStyle="normal"
+                        android:id="@+id/looking"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#FFf"
+                        android:layout_below="@+id/separator"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFF"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@+id/looking"
+                        android:layout_marginTop="12dp"
+                        android:id="@+id/bhk_flat"
+                        android:text="1,2,3 BHK . Flat Other Commercial,">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFF"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@+id/bhk_flat"
+                        android:layout_marginTop="12dp"
+                        android:id="@+id/budget"
+                        android:text="Budget Rs.5000-Rs.10000">
+                    </TextView>
+
+                    <Button
+                        android:layout_width="80sp"
+                        android:textColor="#d8232a"
+                        android:textStyle="normal"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="40dp"
+                        android:text="Edit"
+                        android:background="#FFF"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        ></Button>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@+id/recq"
+                android:id="@+id/card_for_prefrence"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="#FFF">
+
+                    <TextView
+                        android:id="@+id/pref"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15sp"
+                        android:text="My Preferences"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_number_of_pref"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="19sp"
+                        android:layout_toRightOf="@id/pref"
+                        android:text="(0/4)"
+                        android:textSize="14sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_project_prefred_st"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pref"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="Project Preferred"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_seats_required"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pref"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="60sp"
+                        android:text="Seats Required"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+
+                    <TextView
+                        android:id="@+id/tv_add_project_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_project_prefred_st"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="Add Project Name"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_add_seats_required"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_project_prefred_st"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30sp"
+                        android:text="Add Seats Required"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+
+                    <TextView
+                        android:id="@+id/tv_floor_prefrences_office"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_add_seats_required"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="Floor Preference (Office)"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_any_floor_prefrence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_add_project_name"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="22dp"
+                        android:text="Any Floor Preference"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+
+                    <TextView
+                        android:id="@+id/tv_floor_prefrence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_floor_prefrences_office"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="Add Floor Preference"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_add_floor_preference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_floor_prefrences_office"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="22sp"
+                        android:text="Add Floor preference"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+
+                    <View
+                        android:id="@+id/separator1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tv_add_floor_preference"
+                        android:layout_marginTop="15dp"
+                        android:background="#23000000" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/separator1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15sp"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Edit"
+                            android:textColor="#d8232a"
+                            android:textSize="16sp"
+                            android:textStyle="normal"></TextView>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15sp"
+                            android:padding="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"></ImageView>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_below="@+id/card_for_prefrence"
+                android:layout_marginTop="10dp"
+                android:id="@+id/card_account"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="#FFF"
+                    android:layout_height="320dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Account"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:id="@+id/account"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(0/4)"
+                        android:layout_toRightOf="@id/account"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14sp"
+                        android:id="@+id/tv_number_of_account"
+                        android:layout_marginTop="19sp"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rental Journery"
+                        android:layout_below="@+id/account"
+                        android:id="@+id/tv_rental_journery"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:layout_marginLeft="15sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Site vits done"
+                        android:layout_below="@+id/account"
+                        android:id="@+id/tv_site_visit_done"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:layout_marginRight="50sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Finalized the location"
+                        android:layout_below="@+id/tv_site_visit_done"
+                        android:id="@+id/tv_finilized_the_location"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:layout_marginLeft="15sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:layout_below="@+id/tv_rental_journery"
+                        android:id="@+id/tv_no"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:layout_marginRight="120sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In Touch with"
+                        android:layout_below="@+id/tv_no"
+                        android:id="@+id/tv_in_touch_with"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:layout_marginLeft="15sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shifting"
+                        android:layout_below="@+id/tv_no"
+                        android:id="@+id/tv_shifting"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:layout_marginRight="85dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:layout_below="@+id/tv_in_touch_with"
+                        android:id="@+id/tv_none"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:layout_marginLeft="15sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Immediately"
+                        android:layout_below="@+id/tv_in_touch_with"
+                        android:id="@+id/tv_immeditealy"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:layout_marginRight="60sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agent Need"
+                        android:layout_below="@+id/tv_immeditealy"
+                        android:id="@+id/tv_agent_need"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:layout_marginLeft="15sp">
+
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Agent Preference"
+                        android:layout_below="@+id/tv_agent_need"
+                        android:id="@+id/tv_add_agent_prefrence"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:layout_marginLeft="15sp"></TextView>
+
+
+                    <View android:id="@+id/separator2"
+                        android:background="#23000000"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tv_add_agent_prefrence"
+                        android:layout_marginTop="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/separator2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15sp"
+
+                            android:padding="5dp"
+                            android:text="Edit"
+                            android:textColor="#d8232a"
+                            android:textSize="16sp"
+                            android:textStyle="normal"></TextView>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                         android:layout_centerVertical="true"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+
+                            android:padding="5dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"></ImageView>
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/card_account"
+                android:layout_marginTop="10dp"
+                android:id="@+id/about_me_card"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="#FFF">
+
+                    <TextView
+                        android:id="@+id/about_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15sp"
+                        android:text="About Me"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_number_of_about_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="19sp"
+                        android:layout_toRightOf="@id/about_me"
+                        android:text="(0/4)"
+                        android:textSize="14sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_purpose_of_space"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_number_of_about_me"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="Purpose Of Space"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_purpose_new_office"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_number_of_about_me"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="22sp"
+                        android:text="Purpose-New Office Space"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_add_anwser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_purpose_new_office"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="Add Answer"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_add_answers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_purpose_new_office"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="120sp"
+                        android:text="Add Answer"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal"></TextView>
+
+
+                    <View
+                        android:id="@+id/separator3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tv_add_answers"
+                        android:layout_marginTop="15dp"
+                        android:background="#23000000" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/separator3">
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="15dp"
+                            android:padding="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Edit"
+                            android:textColor="#d8232a"
+                            android:textSize="16sp"
+
+                            android:textStyle="normal"></TextView>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                         android:padding="5dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15sp"
+
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"></ImageView>
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@+id/about_me_card">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:background="#FFF"
+                    android:layout_height="220dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Contact Details"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:id="@+id/contact_details"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="15sp"
+                        android:textColor="#000"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(1/3)"
+                        android:layout_toRightOf="@+id/contact_details"
+                        android:textStyle="normal"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="14dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textSize="14dp"
+                        android:id="@+id/tv_name"
+                        android:textColor="#000"
+                        android:layout_below="@+id/contact_details"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="15sp"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="14dp"
+                        android:id="@+id/tv_email"
+                        android:textColor="#000"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/contact_details"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="60dp"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Name"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:id="@+id/tv_add_name"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="admin@gmail.com"
+                        android:textSize="14dp"
+                        android:id="@+id/tv_add_email"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="120sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:id="@+id/tv_phone_number"
+                        android:layout_below="@+id/tv_add_email"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15sp"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Phone Number"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:id="@+id/tv_add_phone_number"
+                        android:layout_below="@+id/tv_phone_number"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15sp"></TextView>
+
+
+                    <View android:id="@+id/separator4"
+                        android:background="#23000000"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tv_add_phone_number"
+                        android:layout_marginTop="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:textStyle="normal"
+                        android:layout_marginLeft="15sp"
+                        android:textSize="16sp"
+                        android:layout_below="@id/separator4"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#d8232a"></TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15sp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"></ImageView>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

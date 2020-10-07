@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_list"
+        android:title="Listing" />
+
+    <item
+        android:id="@+id/navigation_notifications1"
+        android:icon="@drawable/ic_reward_icc"
+        android:title="Exclusive" />
+
+    <item
+        android:id="@+id/navigation_notifications12"
+        android:icon="@drawable/ic_buildings"
+        android:title="Projects" />
+
+    <item
+        android:id="@+id/navigation_notifications123"
+        android:icon="@drawable/ic_human_resources"
+        android:title="Realtors" />
+
+</menu>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar"
+        android:background="@color/orange"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="5dp"
+            android:id="@+id/back"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:text="My Activity"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/white">
+        </TextView>
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:overScrollMode="never"
+        android:background="@drawable/tab_color_selector"
+        app:tabIndicatorColor="@color/orange"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+        app:tabPaddingEnd="16dp"
+        app:tabPaddingStart="16dp"
+        app:tabRippleColor="@color/orange"
+        app:tabSelectedTextColor="@color/orange"
+        app:tabTextColor="#000">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Shortlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shortlist" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Viewed" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Saved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Searches" />
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:isScrollContainer="false"
+        android:visibility="visible" />
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+

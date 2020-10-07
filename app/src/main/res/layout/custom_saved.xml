@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="240dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0B8348"
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtVerified"
+                android:textSize="12dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_check_circle_black_24dp"
+                android:text="  VERIFIED PROPERTY"></TextView>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:src="@drawable/property1"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:id="@+id/imgProperty"
+                android:layout_below="@+id/txtVerified"
+                android:layout_height="130dp"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 70.0 Lac"
+                android:textSize="15dp"
+                android:id="@+id/txtPrice"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgProperty"
+                android:layout_marginTop="35sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 BHK Builder Floor Apartment"
+                android:textSize="15dp"
+                android:id="@+id/txtBhkFloor"
+                android:layout_below="@+id/txtPrice"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgProperty"
+                android:layout_marginTop="7sp"
+                android:textStyle="normal"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shri Balaji Floors"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:id="@+id/txtPropertyName"
+                android:layout_below="@+id/txtBhkFloor"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgProperty"
+                android:layout_marginTop="7sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uttam Nagar, New Delhi 589.6..."
+                android:textSize="15dp"
+                android:id="@+id/txtAddress"
+                android:layout_below="@+id/txtPropertyName"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgProperty"
+                android:layout_marginTop="7sp"
+                android:textStyle="normal"></TextView>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_check_black_24dp"
+                android:layout_below="@+id/imgProperty"
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtNewly"
+                android:layout_marginLeft="10dp"
+                android:text="  Newly Constructed Property"></TextView>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="30sp"
+                android:layout_below="@+id/txtNewly"
+                android:text="Get Phone No."
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/btnGetPhone"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/backbox"
+               ></Button>
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="30sp"
+                android:layout_below="@+id/txtNewly"
+                android:text="Call Agent"
+                android:textSize="12dp"
+                android:layout_toRightOf="@+id/btnGetPhone"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#FFF"
+                android:background="@drawable/backbox"
+                 android:backgroundTint="@color/colorAccent"
+                ></Button>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

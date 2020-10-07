@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.creators.sarthaksingapore.Fragments.UI.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.creators.sarthaksingapore.Fragments.UI.HomeFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_Search"
+        android:name="com.creators.sarthaksingapore.Fragments.BottomSearchFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/fragment_bottom_search" />
+    <fragment
+        android:id="@+id/nav_Saved"
+        android:name="com.creators.sarthaksingapore.Fragments.BottomSavedFragment"
+        android:label="@string/menu_saved"
+        tools:layout="@layout/fragment_bottom_saved" />
+
+    <fragment
+        android:id="@+id/nav_Profile"
+        android:name="com.creators.sarthaksingapore.Fragments.BottomProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_bottom_profile" />
+    <fragment
+        android:id="@+id/nav_Alert"
+        android:name="com.creators.sarthaksingapore.Fragments.BottomAlertFragment"
+        android:label="@string/menu_alert"
+        tools:layout="@layout/fragment_bottom_alert" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.creators.sarthaksingapore.Fragments.UI.Setting.SettingFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/settingfragment" />
+
+    <fragment
+        android:id="@+id/nav_Feedback"
+        android:name="com.creators.sarthaksingapore.Fragments.FeedbackDialogSheet"
+        android:label="@string/menu_feedback"
+        tools:layout="@layout/feedbackdialog"></fragment>
+    <fragment
+        android:id="@+id/nav_setalert"
+        android:name="com.creators.sarthaksingapore.Fragments.SetAlertFragment"
+        android:label="@string/menu_setalert"
+        tools:layout="@layout/setalertfragment"></fragment>
+
+    <fragment
+         android:id="@+id/nav_ratestraeds"
+        android:name="com.creators.sarthaksingapore.Fragments.UI.RatesAndTrades"
+        android:label="@string/menu_ratestreds"
+        tools:layout="@layout/activity_rates_and_trands">
+    </fragment>
+
+    <fragment
+         android:id="@+id/nav_explorelocalities"
+        android:name="com.creators.sarthaksingapore.Fragments.UI.ExploreLocalities.ExploreLocalitiesFragment"
+        android:label="@string/menu_localities"
+        tools:layout="@layout/activity_explore_localities">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.creators.sarthaksingapore.Fragments.UI.ShareAppFragment.ShareAppFragment"
+        android:label="@string/nav_share"
+        tools:layout="@layout/activity_explore_localities">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_exploreas"
+        android:name="com.creators.sarthaksingapore.Fragments.UI.EmiCalculator.EmiCalculatorFragment"
+        android:label="EMI Calculator"
+        tools:layout="@layout/emicalculatefragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_propertiesbuy"
+        android:name="com.creators.sarthaksingapore.Fragments.UI.OurProjects.OurProjectFragment"
+        android:label="Our Projects"
+        tools:layout="@layout/ourprojectfrag">
+    </fragment>
+
+</navigation>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_propertiesbuy"
+            android:icon="@drawable/ic_cart"
+            android:title="@string/menu_propertice" />
+
+        <item
+            android:id="@+id/nav_newproject"
+            android:icon="@drawable/ic_buildings"
+            android:title="@string/menu_newproject" />
+
+        <item
+            android:id="@+id/nav_explorelocalities"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="@string/menu_explorelocal" />
+
+
+    </group>
+
+    <!--<item android:title="Sell/Rent Your Property">
+        <menu>
+            <item
+                android:id="@+id/nav_new"
+                android:icon="@drawable/ic_buildings"
+                android:title="Post Property" />
+
+            <item
+                android:id="@+id/nav_explore"
+                android:icon="@drawable/ic_location_on_black_24dp"
+                android:title="Advertise With Us" />
+
+        </menu>
+    </item>-->
+    <item android:title="Tool &amp; Advice">
+        <menu>
+
+
+            <item
+                android:id="@+id/nav_ratestraeds"
+                android:icon="@drawable/ic_rates_and_trends"
+                android:title="Rates &amp; Trends" />
+
+            <item
+                android:id="@+id/nav_exploreasfjafg"
+                android:icon="@drawable/ic_forum"
+                android:title="Forums" />
+            <item
+                android:id="@+id/nav_exploreas"
+                android:icon="@drawable/ic_emi_calcy"
+                android:title="EMI Calculator" />
+
+
+
+
+        </menu>
+    </item>
+    <!--<item android:title="Property Services">
+        <menu>
+            <item
+                android:id="@+id/nav_newffshf"
+                android:icon="@drawable/ic_buildings"
+                android:title="Property Valuation" />
+
+            <item
+                android:id="@+id/nav_explojkf"
+                android:icon="@drawable/ic_location_on_black_24dp"
+                android:title="Advocate on Call" />
+
+            <item
+                android:id="@+id/nav_exploreassk"
+                android:icon="@drawable/ic_location_on_black_24dp"
+                android:title="Property Astrology" />
+            <item
+                android:id="@+id/nav_exploreahfs"
+                android:icon="@drawable/ic_location_on_black_24dp"
+                android:title="EMI Calculator" />
+
+
+        </menu>
+    </item>-->
+ <!--   <item android:title="News">
+        <menu>
+            <item
+                android:id="@+id/nav_propertNews"
+                android:icon="@drawable/ic_newspaper"
+                android:title="Property News" />
+
+            <item
+                android:id="@+id/nav_smartcities"
+                android:icon="@drawable/ic_smartcity"
+                android:title="Smart Cities" />
+
+            <item
+                android:id="@+id/nav_IndusrtyBuzz"
+                android:icon="@drawable/ic_industry_buzz"
+                android:title="Industry Buzz" />
+
+            <item
+                android:id="@+id/nav_Expertcorner"
+                android:icon="@drawable/ic_expert"
+                android:title="Expert Corner" />
+
+            <item
+                android:id="@+id/nav_legalcorner"
+                android:icon="@drawable/ic_tax"
+                android:title="Legal &amp; Taxation" />
+
+            <item
+                android:id="@+id/nav_Affordablehousing"
+                android:icon="@drawable/ic_affordable_housing"
+                android:title="Affordable  Housing" />
+
+
+        </menu>
+    </item>-->
+
+    <item android:title="We Listen">
+        <menu>
+            <item
+                android:id="@+id/nav_Feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="FeedBack" />
+
+            <item
+                android:id="@+id/nav_reteus"
+                android:icon="@drawable/ic_rate_us"
+                android:title="Rate Us" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_setalert"
+                android:icon="@drawable/ic_set_alert"
+                android:title="Set Alerts" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings"
+                android:title="Setting" />
+
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_enter"
+                android:title="Login" />
+
+        </menu>
+    </item>
+
+</menu>

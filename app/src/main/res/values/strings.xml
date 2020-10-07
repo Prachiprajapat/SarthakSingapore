@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Sarthak Singapore</string>
+    <string name="nav_home" translatable="false">Shop Now</string>
+    <string name="nav_chat" translatable="false">Chat With Us</string>
+    <string name="nav_user" translatable="false">User</string>
+    <string name="nav_order" translatable="false">My Orders</string>
+    <string name="nav_profile" translatable="false">Brokerage Protection</string>
+    <string name="nav_support" translatable="false">Support</string>
+    <string name="nav_about" translatable="false">Rewards</string>
+    <string name="failed" translatable="false">Sorry,Your Payment Has Failed</string>
+    <string name="again" translatable="false">Please Try Again</string>
+    <string name="nav_terms" translatable="false">KYC</string>
+
+    <string name="retry" translatable="false">Retry Order</string>
+    <string name="nav_review" translatable="false">Review Us</string>
+    <string name="nav_contact" translatable="false">Contact Us</string>
+    <string name="nav_share" translatable="false">PG</string>
+    <string name="nav_logout" translatable="false">Video &amp; Tutorials</string>
+    <string name="btn_continue" translatable="false">Continue</string>
+    <string name="btn_Register" translatable="false">Register</string>
+    <string name="menu_icon">menu icon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_home">Home</string>
+    <string name="home_second"> home_second</string>
+    <string name="menu_propertice">Our Projects</string>
+    <string name="menu_properticerent">Properties for Rent</string>
+    <string name="menu_newproject">New Projects</string>
+    <string name="menu_explorelocal">Explore Localities</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_saved">Saved</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_alert">Alert</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_setalert">Set Alert</string>
+    <string name="menu_localities">Explore Localities</string>
+    <string name="menu_ratestreds">Rates &amp; Treads</string>
+
+</resources>
